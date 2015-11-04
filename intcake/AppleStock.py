@@ -17,7 +17,7 @@ returns a list containing corresponding min, max index and max profit
 Algorithm: greedy approach, optimal solution so far for each iteration
 Running time: O(n) - Linear
 """
-def get_max_profit_index(stock_prices_yesterday): # returns 6 (buying $5 and selling for $11)
+def get_max_profit_index(stock_prices_yesterday): # returns [2,4,6] (buying $5 and selling for $11)
 	min_price = stock_prices_yesterday[0]
 	max_profit = min_index = max_index = next_min_index = 0
 
