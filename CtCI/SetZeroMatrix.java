@@ -1,11 +1,4 @@
 public class SetZeroMatrix{
-    public static void main(){
-    public static void main(String[] args)
-    {
-        int[] a = {-3,-2,2,4};
-        System.out.println(getNumberSameAsIndex(a));
-    }
-
     public static void zeroMatrix(int[][] numbers){
         boolean[] zeroX = new boolean[numbers.length];
         boolean[] zeroY = new boolean[numbers.length];
