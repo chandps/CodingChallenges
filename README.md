@@ -1,7 +1,7 @@
 # Hackerrank
 Hackerrank, CtCI, and intcake Algorithm challenge solution in Python and Java
 
-Browse each solution by finding:
+Browse each solution by finding: <br/>
 [ChallengeName].py <br/>
 [ChallangeName].java
 
