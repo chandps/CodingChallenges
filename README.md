@@ -1,5 +1,5 @@
 # Hackerrank
-My Hackerrank, CtCI, and intcake Algorithm challenge solution in Python and Java
+My Hackerrank, TopCoder, CtCI, and intcake Algorithm challenge solution in Python and Java
 
 Browse each solution by finding: <br/>
 [ChallengeName].py <br/>
