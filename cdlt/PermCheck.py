@@ -1,7 +1,7 @@
 # Lesson learned:
 # check every input whether its out of range or not
 # if can run once while checking every constraint or everything, then maximize that by running just once
-# it doesn't make any significant difference in running time to run twice N (only 0.01 more slower)
+# it doesn't make any significant difference in running time to run twice N (only 0.01s more slower)
 # that being said, the complexity is still O(N) after all
 
 def solution(A):
