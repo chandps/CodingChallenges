@@ -16,10 +16,3 @@ def solution(N):
                 count += 1
     return maxC
 
-
-def print_solution(N):
-    print(bin(N)[2::])
-    print(solution(N))
-
-
-print_solution(561892)

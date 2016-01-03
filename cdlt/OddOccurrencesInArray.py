@@ -4,6 +4,3 @@ def solution(A):
         val ^= x
     return val
 
-
-s = [2, 3, 5, 2, 3]
-print(solution(s))
