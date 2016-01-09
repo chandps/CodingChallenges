@@ -1,15 +1,17 @@
 def solution(A):
-    events = []
-    for i, a in enumerate(A):
-        events += [(i - a, +1), (i + a, -1)]
-    events.sort(key=lambda x: (x[0], -x[1]))
-    intersections, active_circles = 0, 0
-    for _, circle_count_delta in events:
-        intersections += active_circles * (circle_count_delta > 0)
-        active_circles += circle_count_delta
-        if intersections > 10E6:
+    level = []
+    for i, val in enumerate(A):
+        level += [(i - val, +1), (i + val, -1)]
+
+    level.sort(key=lambda x: (x[0], -x[1]))
+
+    intersection, active_disk = 0, 0
+    for _, elevation in level:
+        intersection += active_disk * (elevation > 0)
+        active_disk += elevation
+        if intersection > 10E6:
             return -1
-    return intersections
+    return intersection
 
 
 if __name__ == '__main__':
