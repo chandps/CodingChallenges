@@ -16,6 +16,7 @@ def solution(A):
 
     if size == 0:
         return -1
+
     count = 0
     for x in A:
         if x == value:
