@@ -1,4 +1,5 @@
 def goldenLeader(A):
+
     size = 0
     value = -1
 
@@ -22,5 +23,25 @@ def goldenLeader(A):
     return -1
 
 
+def maxOccurence(A):
+    A.sort()
+    maxnumber, maxcount, count, lastval = A[0], 0, 0, A[0]
+
+    for i in range(len(A)):
+        if lastval == A[i]:
+            count += 1
+        else:
+            lastval = A[i]
+            count = 0
+        if maxcount < count:
+            maxcount = count
+            maxnumber = lastval
+
+    return maxnumber, maxcount
+
+
+
 A = [2, 3, 2, 3]
 print(goldenLeader(A))
+A = [1, 2, 3, 4, 5, 5, 5, 5, 3, 2, 1]
+print(maxOccurence(A))
