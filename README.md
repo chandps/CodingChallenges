@@ -1,10 +1,32 @@
-# Topcoder
-My TopCoder, Hackerrank, GeeksForGeeks, CtCI, and intcake Algorithm challenge solution in Python, Java, and C++ (mainly in Python)
+# Coding Challenges
+Collection of my solution from various Code & Algorithm challenges.
 
-Browse each solution by finding: <br/>
-[ChallengeName].py <br/>
-[ChallengeName].java
+## Usage
+
+I use C++14 and python 3.5 in all of my c++ & python code.
+Add `-std=c++14` command-line flag if you are using GCC.
+
+Code & Algorithm challenges are grouped based on directories:
+
+`CIBootcamp/`
+`CtCi/`
+`Hackerrank/`
+`cdlt/`
+`gfg/`
+`intcake/`
+`sandbox/`
+`topcoder/`
 
 More solution to be added later:
-- CodeChef
-- SPOJ
+- [ ] CodeChef
+- [ ] SPOJ
+- [ ] Coderbyte
+- [ ] ProjectEuler
+- [ ] Codewars
+
+## License
+
+You can use my code solutions for free for any purposes under the terms of MIT License (MIT).
+All the posted solution are 100% correct but not guaranteed to be the most efficient solution.
+
+> happy coding!
