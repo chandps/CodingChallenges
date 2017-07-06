@@ -14,7 +14,7 @@ int* compareTheTriplets(int a0, int a1, int a2, int b0, int b1, int b2, int *res
 	return result;
 }
 
-#ifdef CONSOLE
+#ifdef TEST
 
 int main() {
 	int a0;
@@ -39,4 +39,4 @@ int main() {
 	return 0;
 }
 
-#endif // CONSOLE TEST
+#endif // TEST
