@@ -2,19 +2,17 @@
 
 #include <math.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <stdbool.h>
 
 int diagonalDifference(int n, int** matrix) {
-	int result, diagonal1, diagonal2;
+	int result = 0, diagonal1 = 0, diagonal2 = 0;
+
 	for (int i = 0; i < n; i++) {
 		diagonal1 += matrix[i][i];
-		diagonal2 += matrix[(n - 1) - i][(n - 1) - i];
+		diagonal2 += matrix[i][(n - 1) - i];
 	}
 	result = abs(diagonal1 - diagonal2);
+
 	return result;
 }
 
@@ -25,7 +23,7 @@ int main() {
 	/* allocate matrix */
 	int** matrix = (int**) malloc(n * sizeof *matrix);
 	for (int i = 0; i < n; i++) {
-		matrix[i] = malloc(n * sizeof *matrix[i]);
+		matrix[i] = (int*) malloc(n * sizeof *matrix[i]);
 	}
 
 	/* initialize matrix */
@@ -39,7 +37,6 @@ int main() {
 	int result = diagonalDifference(n, matrix);
 	/* print output */
 	printf("%d", result);
-
 
 	/* deallocate matrix */
 	for (int i = 0; i < n; i++) {
