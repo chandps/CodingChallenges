@@ -1,27 +1,41 @@
-#include <math.h>
+#pragma once
+
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
-#include <assert.h>
-#include <limits.h>
-#include <stdbool.h>
 
-float* plusMinus(int n, int pNum, int nNum, int zeroNum) {
-	static float* result = (float*)malloc(3 * sizeof *result);
+void plusMinus(int n, int pNum, int nNum, int zeroNum) {
+	float *result = (float *) malloc(3 * sizeof *result);
 
-	result[0] = (float)pNum / (float)n;
-	result[1] = (float)pNum / (float)n;
-	result[2] = (float)pNum / (float)n;
+	result[0] = (float) pNum / n;
+	result[1] = (float) nNum / n;
+	result[2] = (float) zeroNum / n;
 
-	return result;
+	printf("%.6f\n", result[0]);
+	printf("%.6f\n", result[1]);
+	printf("%.6f\n", result[2]);
+
+	free(result);
 }
 
 int main() {
-	int n;
+	int n, pNum = 0, nNum = 0, zeroNum = 0;
 	scanf("%d", &n);
 	int arr[n];
-	for (int arr_i = 0; arr_i < n; arr_i++) {
-		scanf("%d", &arr[arr_i]);
+
+	for (int i = 0; i < n; i++) {
+		scanf("%d", &arr[i]);
+		if (arr[i] > 0) {
+			pNum++;
+		}
+		else if (arr[i] < 0) {
+			nNum++;
+		}
+		else {
+			zeroNum++;
+		}
 	}
+
+	plusMinus(n, pNum, nNum, zeroNum);
+
 	return 0;
 }
