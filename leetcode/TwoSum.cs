@@ -63,46 +63,6 @@ public class Solution {
 		}
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		// check which index is larger (- or +)
-		
-		// case 1: target is + number
-		// + plus + = target
-		for (int i = 0; i < target; i++) {
-			if (nums_count[i] + nums_count[target - i] >= 2) {
-				result[0] = nums_count_index[i];
-				result[1] = nums_count_index[target - i];
-				
-				i == target;
-			}
-		}
-		
-		
-		// + plus - = target
-		for (int i = 0; i < target; i++) {
-			if (nums_count[i] + nums_count[target - i] >= 2) {
-				result[0] = nums_count_index[i];
-				result[1] = nums_count_index[target - i];
-				
-				i == target;
-			}
-		}
-		
-		// case 2: target is - number
-		
-		// - plus - = target
-		
-		// special case if target/2 + target/2 = target exist
-		
-		
         bool isFound = false;
         int left = 0;
         int right = target;
